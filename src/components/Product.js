@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { StarIcon } from '@heroicons/react/solid'
+import prime from "../assets/prime-tag.png"
 
 export default function Product({ id, title, price, description, category, image }) {
     const [rating, setRating] = useState(0)
@@ -14,7 +15,7 @@ export default function Product({ id, title, price, description, category, image
     <div className='relative flex flex-col m-5 bg-white z-30 p-10'>
         <p className='absolute top-2 right-2 text-xs italic text-gray-400'>{category}</p>
 
-        <Image width={200} height={200}  objectFit="contain" alt={title} src={image}  />
+        <Image width={200} height={200}  objectFit="contain" alt={title} src={image} />
 
         <h4 className='my-3'>{title}</h4>
 
@@ -32,7 +33,7 @@ export default function Product({ id, title, price, description, category, image
 
         {hasPrime && (
             <div className='flex items-center space-x-2'>
-                <img className='w-12' src='https://links.papareact.com/fdw' alt='prime logo' />
+                <Image width={50} height={50} alt='prime logo' src={prime}  />
                 <p className='text-xs text-gray-500'>FREE Next-day Delivery</p>
             </div>
          )}

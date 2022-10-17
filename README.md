@@ -1,4 +1,4 @@
-# Netflix-clone
+# Amazon-clone
 
     Projet perso | Clone d'Amazon
 
@@ -11,7 +11,6 @@ Reproduction de l'interface et de ses fonctionnalités
 ## Compétences développées
 
 - [x] Découverte de Tailwind
-
 
 ## Outils
 
