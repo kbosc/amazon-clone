@@ -20,12 +20,13 @@ export default function Banner() {
         >
             <div>
             <Image
-                loading='lazy'
+                // loading='lazy'
                 src={image1}
                 width='100%'
                 height='50%'
                 layout="responsive"
                 alt="banner image"
+                priority={1}
             />
             </div>
             <div>
