@@ -20,6 +20,7 @@ export default function Checkout() {
             <div className='flex-grow m-5 shadow-sm'>
                 <Image 
                     src={checkoutBanner}
+                    alt="banner checkout"
                     width={1020}
                     height={250}
                     objectFit="contain"
